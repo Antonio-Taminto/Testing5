@@ -7,7 +7,7 @@ class DataTest {
 
     @org.junit.jupiter.api.Test
     void cambiaData() {
-        String result = testing.cambiaData();
+        String result = testing.cambiaData(1,-1,7);
         assertEquals("08/02/24",result,
                 "ci aspettiamo la data con un mese in mese ma un anno e 7 giorni in più");
     }

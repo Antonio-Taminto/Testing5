@@ -17,7 +17,7 @@ public class Data {
         this.data = data;
     }
 
-    public String cambiaData(){
-       return (data.plusYears(1).minusMonths(1).plusDays(7)).format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
+    public String cambiaData(int year,int month,int day){
+       return (data.plusYears(year).plusMonths(month).plusDays(day)).format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
     }
 }
